@@ -16,7 +16,7 @@ import 'semantic-ui-css/semantic.min.css';
 import Principal from './Principal';
 const Inicio = () => {
 	const history= useHistory();
-	const passwrod_valido = 1234;
+	const password_valido = 1234;
 	const nombre_feli = 'F';
 
 	const [ sesion_usuario, setSesion_usuario] = useState('');
@@ -30,7 +30,7 @@ const Inicio = () => {
 	console.log(password);
 
 	function validacion(usuario, password) {
-		if (usuario == nombre_feli && password == passwrod_valido) {
+		if (usuario == nombre_feli && password == password_valido) {
 			setMensaje('sis');
 			localStorage.setItem(usuario, setSesion_usuario)
 			localStorage.setItem(password, setSesion_password)
@@ -47,7 +47,7 @@ const Inicio = () => {
 			<div className="ui yellow fluid card" style={{ padding: 20 }}>
 				<div className="center aligned">
 					<Icon name="users" size="massive" />
-					<h1>Iniciar Sesion</h1>
+					<h1>Inicio de sesión</h1><br />
 				</div>
 
 				<div className="left aligned">
@@ -58,9 +58,9 @@ const Inicio = () => {
 						}}
 					>
 						<div class="field">
-							<label>Nombre usuario</label>
+							<label>Usuario:</label>
 							<input
-								placeholder="Ingrese nombre ususario"
+								placeholder="Ingrese su nombre de usuario"
 								type="text"
 								value={usuario}
 								onChange={(event) => {
@@ -69,19 +69,19 @@ const Inicio = () => {
 							/>
 						</div>
 						<div class="field">
-							<label>Contraseña</label>
+							<label>Contraseña:</label>
 							<input
-								placeholder="Ingrese contraseña"
+								placeholder="Ingrese su contraseña"
 								type="password"
 								value={password}
 								onChange={(event) => {
 									setPassword(event.target.value);
 								}}
 							/>
-						</div>
+						</div><br />
 						<div class="field">
-							<Link to="/Registro">Si aun no se ha regstrado ingrese aquí</Link>
-						</div>
+							<Link to="/Registro">Si no tiene cuenta, registrese aquí.</Link>
+						</div><br />
 						<div className="center aligned">
 							<button
 								type="submit"
