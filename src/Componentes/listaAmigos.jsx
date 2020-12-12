@@ -10,7 +10,7 @@ function ListaAmigos(props) {
 
     function removerAmigo(usuarioSeleccionado, usuarioEliminado) {
         var indexUsuarioEliminado = amigosPersonales.indexOf(usuarioSeleccionado);
-         
+        amigosPersonales.splice(indexUsuarioEliminado, 1);
     }
 
     return(

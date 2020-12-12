@@ -6,11 +6,6 @@ import 'semantic-ui-css/semantic.min.css';
 
 const Registro = () => {
 	return (
-		<Container>
-			
-		</Container>	
-
-		/*
 		<div className="App">
 			<div className="ui yellow fluid card" style={{ padding: 20 }}>
 				<div className="center aligned">
@@ -54,7 +49,7 @@ const Registro = () => {
 					</div>
 				</form>
 			</div>
-		</div> */
+		</div> 
 	);
 };
 
