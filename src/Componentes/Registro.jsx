@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
 import '../App.css';
-import { Icon } from 'semantic-ui-react';
+import { Menu, Grid, Image, Container } from 'semantic-ui-react';
 import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch, useParams } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
 
 const Registro = () => {
 	return (
+		<Container>
+			
+		</Container>	
+
+		/*
 		<div className="App">
 			<div className="ui yellow fluid card" style={{ padding: 20 }}>
 				<div className="center aligned">
@@ -49,7 +54,7 @@ const Registro = () => {
 					</div>
 				</form>
 			</div>
-		</div>
+		</div> */
 	);
 };
 
