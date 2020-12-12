@@ -23,7 +23,6 @@ const Perfil = () => (
                         consequat massa quis enim.
                     </p>
                 </Container>
-
             </Grid.Column>
         </Grid.Row>
         <Grid.Row>

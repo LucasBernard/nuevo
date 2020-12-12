@@ -23,7 +23,7 @@ function App() {
 					<MenuLateral />
 					<Principal />
 				</Route>
-				<Route>
+				<Route path="/Perfil">
 					<MenuLateral />
 					<Perfil />
 				</Route>
