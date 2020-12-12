@@ -11,7 +11,7 @@ const Perfil = () => (
             </Grid.Column>
             <Grid.Column width={8}>
                 <Container text>
-                    <Header style={{ marginBottom: '0px'}} as="h1">Lucas Bernard<Header disabled as="h4" disabled >#1234</Header></Header>
+                    <Header style={{ marginBottom: '0px'}} as="h1">Lucas Bernard<Header disabled as="h4" >#1234</Header></Header>
                     <Header style={{ marginTop: '0px'}} as="h4" disabled >Lucas.bernard@usm.cl</Header>
                     <Header as="h3">Ingenería Civil Informática</Header>
                     <Link to="/Ccontraseña">Cambiar contraseña</Link>
