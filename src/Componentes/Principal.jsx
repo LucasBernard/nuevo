@@ -1,28 +1,39 @@
 import React, { useState } from 'react';
 import '../App.css';
-import { Icon } from 'semantic-ui-react';
-import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch, useParams } from 'react-router-dom';
-import 'semantic-ui-css/semantic.min.css';
+import { Menu, Grid, Image, Container } from 'semantic-ui-react';
 
 const Principal = () => {
 	const [ sesion_usuario, setSesion_usuario] = useState('');
 	
 	return (
-		<div>
-			<h1> jerh </h1>
+		<Menu borderless fixed="left" vertical>
+			<Menu.Item as='a' header>
+				<Image size='tiny' centered="true" src='/logoStudyAnt.png'/>
+				Study-Ant
+			</Menu.Item>
+			<Menu.Item as='a'>
+				<i aria-hidden="true" class="home icon" />Inicio
+			</Menu.Item>
+			<Menu.Item as='a'>
+				<i aria-hidden="true" class="user circle icon" />Perfil
+			</Menu.Item>
+			<Menu.Item as='a'>
+				<i aria-hidden="true" class="group icon" />Buscar grupos
+			</Menu.Item>
+			<Menu.Item as='a'>
+				<i aria-hidden="true" class="address book icon" />Grupos
+			</Menu.Item>
+			<Menu.Item as='a'>
+				<i aria-hidden="true" class="book icon" />Biblioteca Personal
+			</Menu.Item>
+			<Menu.Item as='a'>
+				<i aria-hidden="true" class="address card icon" />Amigos
+			</Menu.Item>
+		</Menu>
 
-			<div class="ui inverted vertical labeled icon ui overlay left thin visible sidebar menu">
-				<a class="item">
-					<i aria-hidden="true" class="home icon" />Home
-				</a>
-				<a class="item">
-					<i aria-hidden="true" class="gamepad icon" />Games
-				</a>
-				<a class="item">
-					<i aria-hidden="true" class="camera icon" />Channels
-				</a>
-			</div>
-		</div>
+		/* Hay que escribir más */
+
+		/* sobretodo del contenedor principal */
 	);
 };
 

@@ -1,7 +1,6 @@
 import './App.css';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import { Icon } from 'semantic-ui-react';
-import Inicio from './Componentes/Inicio';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import LoginForm from './Componentes/Login';
 import 'semantic-ui-css/semantic.min.css';
 import Principal from './Componentes/Principal';
 import Registro from './Componentes/Registro';
@@ -9,21 +8,21 @@ import Registro from './Componentes/Registro';
 function App() {
 	return (
 		<Router>
-			<div className="Inicial">
+			<div>
 				<Switch>
 					<Route path="/" exact>
-						<Inicio />
+						<LoginForm />
 					</Route>
 					<Route path="/Registro">
 						<Registro />
 					</Route>
 				</Switch>
+				<Switch>
+					<Route path="/Principal">
+						<Principal />
+					</Route>
+				</Switch>
 			</div>
-			<Switch>
-				<Route path="/Principal">
-					<Principal />
-				</Route>
-			</Switch>
 		</Router>
 	);
 }
